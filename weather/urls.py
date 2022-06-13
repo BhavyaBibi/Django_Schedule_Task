@@ -1,7 +1,5 @@
-from django.conf.urls import url
-from django.urls import URLPattern
+from django.urls import path
 from weather import views
-
-URLPatterns=[
-    url(r'^$',views.Mainpage.as_view()),
+urlpatterns = [
+    path('', views.MainPage.as_view()),
 ]
